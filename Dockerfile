@@ -14,7 +14,7 @@ RUN apt-get update && \
     echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /" >> /etc/apt/sources.list && \
     apt-get update && \
     apt-get install --no-install-suggests --no-install-recommends -y \
-        cuda-compiler-11-0 cuda-libraries-dev-11-0 && \
+        cuda-nvcc-11-0 cuda-cudart-dev-11-0 libcufft-dev-11-0 libcurand-dev-11-0 && \
     apt-get --purge remove -y wget gnupg ca-certificates && \
     apt-get autoremove -y && \
     apt-get clean all && \

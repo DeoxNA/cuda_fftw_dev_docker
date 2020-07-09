@@ -1,9 +1,12 @@
 # cuda_fftw_docker
-This Docker image enables building and testing applications written in CUDA that use the FFTW.
+A slim Docker image for building and testing CUDA applications that use the FFTW.
 
 The following packages are included:
-- nvcc
+- nvcc compiler
 - CUDA development libraries
+    - CUDA runtime
+    - cufft
+    - curand
 - fftw3
 - cmake
 
